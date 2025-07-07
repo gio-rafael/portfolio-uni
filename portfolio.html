@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Giovanni Rafael</title>
+    <!-- Link para o arquivo CSS principal -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Cabeçalho com navegação -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Giovanni Rafael</h1>
+                <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
+            </div>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Sobre mim</a></li>
+                    <li><a href="formacao.html" class="nav-link">Formação</a></li>
+                    <li><a href="portfolio.html" class="nav-link active">Portfólio</a></li>
+                    <li><a href="contato.html" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal da página de portfólio -->
+    <main class="main">
+        <div class="container">
+            <!-- Título da página -->
+            <section class="page-header">
+                <h2>Meu Portfólio</h2>
+                <p>Projetos desenvolvidos durante minha jornada de aprendizado e experiências</p>
+            </section>
+
+            <!-- Seção de projetos web -->
+            <section class="projects">
+                <h3>Projetos Web</h3>
+                <div class="projects-grid">
+                    <!-- Card de projeto 1 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <span>🌐</span>
+                                <p>Landing Page</p>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Landing Page Responsiva</h4>
+                            <p class="project-description">
+                                Página de destino moderna e responsiva desenvolvida para uma empresa fictícia.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Responsivo</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" onclick="showProjectDemo(\'landing\')">Ver Demo</a>
+                                <a href="#" class="project-link" onclick="showProjectCode(\'landing\')">Ver Código</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção de experiências profissionais -->
+            <section class="professional-experience">
+                <h3>Experiência Profissional</h3>
+                <div class="experience-list">
+                    <!-- Experiência 1 -->
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h4>Coordenador de Projetos</h4>
+                            <span class="experience-date">Out/2024 - Atualmente</span>
+                        </div>
+                        <p class="experience-company">Produtora Shock Audiovisual</p>
+                        <p class="experience-description">
+                            Identifiquei gargalos em organização e comunicação que causavam atrasos e retrabalho.
+                            Estruturei um sistema de tarefas no Trello, criei uma agenda compartilhada e implementei
+                            rotinas de alinhamento com a equipe. As mudanças reduziram em 60% os atrasos e aumentaram
+                            a autonomia do time. Além de melhorar a experiência dos clientes, essa vivência reforçou
+                            minhas habilidades em priorização, escuta ativa, relacionamento com stakeholders e gestão
+                            de backlog — conhecimentos que quero aprofundar na área de produto.
+                        </p>
+                        <div class="experience-skills">
+                            <span class="skill-tag">Gestão de Projetos</span>
+                            <span class="skill-tag">Trello</span>
+                            <span class="skill-tag">Comunicação</span>
+                            <span class="skill-tag">Backlog</span>
+                        </div>
+                    </div>
+
+                    <!-- Experiência 2 -->
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h4>Analista de Customer Success</h4>
+                            <span class="experience-date">Jan/2020 - Jan/2023</span>
+                        </div>
+                        <p class="experience-company">H7m. Assessoria de Marketing Digital</p>
+                        <p class="experience-description">
+                            Atuei com foco em experiência do usuário e retenção. Ao identificar risco de cancelamento
+                            de dois grandes contratos, mapeei a jornada do cliente, identifiquei falhas no relacionamento
+                            e propus melhorias. Liderei a reestruturação dos pontos de contato e criei um novo serviço
+                            em modelo de upsell, garantindo a renovação dos contratos em menos de 2 meses. A iniciativa
+                            elevou o NPS em mais de 70% e reforçou minha atuação orientada a produto, com foco em escuta
+                            ativa, análise de feedbacks e entrega contínua de valor.
+                        </p>
+                        <div class="experience-skills">
+                            <span class="skill-tag">Customer Success</span>
+                            <span class="skill-tag">NPS</span>
+                            <span class="skill-tag">Gestão de Clientes</span>
+                            <span class="skill-tag">Análise de Dados</span>
+                        </div>
+                    </div>
+
+                    <!-- Experiência 3 -->
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h4>Designer Gráfico</h4>
+                            <span class="experience-date">Jan/2018 - Dez/2019</span>
+                        </div>
+                        <p class="experience-company">H7m. Assessoria de Marketing Digital</p>
+                        <p class="experience-description">
+                            Minhas responsabilidades eram planejamento, criação e entrega de todos os tipos de materiais
+                            gráficos, garantindo que estavam alinhados com a identidade visual do cliente e seus objetivos
+                            de comunicação. Meu maior desafio era a questão do prazo de entrega devido à falta de clareza
+                            nos processos da empresa, por isso apresentei uma nova ideia de processos baseado em metodologias
+                            ágeis. Com a implementação deste projeto junto ao meu time, conseguimos reduzir o número de
+                            entregas atrasadas em 80% e o índice de retrabalho pela metade.
+                        </p>
+                        <div class="experience-skills">
+                            <span class="skill-tag">Design Gráfico</span>
+                            <span class="skill-tag">Marketing</span>
+                            <span class="skill-tag">Metodologias Ágeis</span>
+                            <span class="skill-tag">Photoshop</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção de habilidades técnicas -->
+            <section class="skills-section">
+                <h3>Habilidades Técnicas</h3>
+                <div class="skills-categories">
+                    <!-- Categoria Ferramentas e Metodologias -->
+                    <div class="skill-category">
+                        <h4>Ferramentas e Metodologias</h4>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Jira</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Notion</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Trello</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Scrum</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Kanban</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Mapeamento de Processos</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Gestão de Backlog</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Categoria Linguagens e Tecnologias -->
+                    <div class="skill-category">
+                        <h4>Linguagens e Tecnologias</h4>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">HTML/CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 50%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">SQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Categoria Ferramentas Gerais -->
+                    <div class="skill-category">
+                        <h4>Ferramentas Gerais</h4>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Pacote Office</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">VS Code</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Git/GitHub</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Giovanni Rafael. Todos os direitos reservados.</p>
+            <p>Desenvolvido como atividade prática da disciplina Ferramentas de Desenvolvimento Web - UNINTER</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

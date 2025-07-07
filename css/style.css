@@ -1,0 +1,733 @@
+/* Reset básico */
+body, h1, h2, h3, h4, p, ul, li, a, form, input, textarea, button, select {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif; /* Fonte genérica e básica */
+    line-height: 1.5;
+    background-color: #f8f8f8; /* Cor de fundo bem clara */
+    color: #222;
+}
+
+.container {
+    width: 90%; /* Largura maior para parecer menos "encaixado" */
+    margin: 20px auto; /* Margem superior e inferior */
+    overflow: hidden;
+    padding: 10px;
+    border: 1px solid #ccc; /* Borda simples para o container */
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #444; /* Cor escura */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 3px solid #666; /* Borda mais grossa */
+}
+
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 16px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centraliza os itens do menu */
+    margin-top: 10px;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: #666; /* Botões de navegação */
+    border: 1px solid #888; /* Borda visível */
+    display: block; /* Ocupa todo o espaço do li */
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: #888; /* Efeito hover simples */
+}
+
+/* Conteúdo principal */
+.main {
+    padding: 20px 0;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #eee; /* Fundo mais claro */
+    border: 1px dashed #999; /* Borda tracejada */
+}
+
+.page-header h2 {
+    font-size: 26px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.page-header p {
+    font-size: 15px;
+    color: #555;
+}
+
+/* Seções gerais */
+section {
+    background-color: #fff;
+    padding: 25px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd; /* Borda simples */
+}
+
+section h3 {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc; /* Linha divisória */
+    padding-bottom: 8px;
+}
+
+/* Sobre mim */
+.hero {
+    display: flex;
+    flex-direction: column; /* Sempre em coluna para um visual mais simples */
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    background-color: #e9e9e9; /* Fundo cinza claro */
+    border: 2px solid #bbb; /* Borda mais evidente */
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 32px;
+    color: #111;
+    margin-bottom: 8px;
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    background-color: #aaa; /* Cor sólida */
+    border-radius: 0; /* Sem borda arredondada */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #fff;
+    border: 2px solid #777; /* Borda sólida */
+    object-fit: cover;
+}
+
+/* About Section */
+.about-text p {
+    margin-bottom: 12px;
+    text-align: left; /* Alinhamento padrão */
+}
+
+/* Hobbies Section */
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Uma coluna por padrão */
+    gap: 15px;
+}
+
+.hobby-card {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border: 1px solid #ccc; /* Borda simples */
+    text-align: left; /* Alinhamento padrão */
+}
+
+.hobby-icon {
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+.hobby-card h4 {
+    font-size: 17px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.hobby-card p {
+    font-size: 13px;
+    color: #666;
+}
+
+/* Formação Section */
+.timeline {
+    position: relative;
+    padding-left: 20px;
+    border-left: 1px solid #999; /* Linha do tempo mais fina */
+}
+
+.timeline-item {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.timeline-marker {
+    width: 10px;
+    height: 10px;
+    background-color: #666; /* Marcador sólido */
+    border-radius: 0; /* Quadrado */
+    position: absolute;
+    left: -25px;
+    top: 5px;
+}
+
+.timeline-header h4 {
+    font-size: 17px;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.timeline-date {
+    font-size: 12px;
+    color: #777;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.timeline-institution {
+    font-size: 14px;
+    color: #555;
+    font-weight: normal; /* Sem negrito */
+    margin-bottom: 4px;
+}
+
+.timeline-description {
+    font-size: 13px;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.skill-tag {
+    display: inline-block;
+    background-color: #ddd; /* Tags de habilidade mais claras */
+    color: #444;
+    padding: 4px 8px;
+    border: 1px solid #bbb; /* Borda visível */
+    font-size: 11px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+.courses-grid, .languages-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Uma coluna por padrão */
+    gap: 15px;
+}
+
+.course-card, .language-card {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.course-header, .language-header {
+    display: block; /* Empilha elementos */
+    margin-bottom: 8px;
+}
+
+.course-card h4, .language-card h4 {
+    font-size: 17px;
+    color: #333;
+}
+
+.course-duration, .language-level {
+    font-size: 12px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.language-level {
+    display: block; /* Empilha elementos */
+}
+
+.level-bar {
+    background-color: #bbb;
+    height: 6px;
+    width: 100px; /* Largura fixa */
+    border-radius: 0; /* Sem arredondamento */
+}
+
+.level-progress {
+    background-color: #008000; /* Verde sólido */
+    height: 100%;
+    border-radius: 0;
+}
+
+.certifications .cert-list {
+    display: grid;
+    grid-template-columns: 1fr; /* Uma coluna por padrão */
+    gap: 10px;
+}
+
+.cert-item {
+    display: flex;
+    align-items: flex-start; /* Alinha ao topo */
+    gap: 10px;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.cert-icon {
+    font-size: 25px;
+    color: #555;
+}
+
+.cert-content h4 {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+.cert-content p {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Portfolio */
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Uma coluna por padrão */
+    gap: 15px;
+}
+
+.project-card {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc; /* Borda simples */
+    overflow: hidden;
+}
+
+.project-image {
+    background-color: #ccc; /* Cor sólida */
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #666;
+    border-bottom: 1px solid #999; /* Borda inferior */
+}
+
+.project-placeholder p {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.project-content {
+    padding: 15px;
+}
+
+.project-content h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.project-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.project-tech .tech-tag {
+    background-color: #eee;
+    color: #444;
+    padding: 3px 6px;
+    border: 1px solid #bbb; /* Borda visível */
+    font-size: 11px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+
+.project-links {
+    margin-top: 12px;
+}
+
+.project-link {
+    display: inline-block;
+    background-color: #007bff; /* Azul sólido */
+    color: #fff;
+    padding: 6px 10px;
+    text-decoration: none;
+    border: 1px solid #0056b3; /* Borda para o botão */
+    font-size: 13px;
+    margin-right: 8px;
+}
+
+.project-link:hover {
+    background-color: #0056b3;
+}
+
+.professional-experience .experience-item {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.experience-header {
+    display: block; /* Empilha elementos */
+    margin-bottom: 8px;
+}
+
+.experience-header h4 {
+    font-size: 17px;
+    color: #333;
+}
+
+.experience-date {
+    font-size: 12px;
+    color: #777;
+    margin-top: 3px;
+}
+
+.experience-company {
+    font-size: 14px;
+    color: #555;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.experience-description {
+    font-size: 13px;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.skills-section .skills-categories {
+    display: grid;
+    grid-template-columns: 1fr; /* Uma coluna por padrão */
+    gap: 15px;
+}
+
+.skills-section .skill-category {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.skills-section .skill-category h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #bbb; /* Linha sólida */
+    padding-bottom: 6px;
+}
+
+.skills-list .skill-item {
+    margin-bottom: 8px;
+}
+
+.skills-list .skill-name {
+    font-size: 14px;
+    color: #444;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.skills-list .skill-bar {
+    background-color: #ddd;
+    height: 8px;
+    border-radius: 0; /* Sem arredondamento */
+}
+
+.skills-list .skill-progress {
+    background-color: #ffc107; /* Amarelo sólido */
+    height: 100%;
+    border-radius: 0;
+}
+
+/* Contato Section */
+.contact-section {
+    display: flex;
+    flex-direction: column; /* Sempre em coluna */
+    gap: 20px;
+}
+
+.contact-info, .contact-form-container {
+    flex: none; /* Não flexível */
+    width: 100%; /* Ocupa toda a largura */
+}
+
+.contact-info h3, .contact-form-container h3 {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.contact-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.contact-list .contact-item {
+    display: flex;
+    align-items: flex-start; /* Alinha ao topo */
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-icon {
+    font-size: 22px;
+    color: #444;
+}
+
+.contact-details h4 {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 2px;
+}
+
+.contact-details p {
+    font-size: 13px;
+    color: #666;
+}
+
+.social-links h4 {
+    font-size: 17px;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.social-icons .social-link {
+    font-size: 25px;
+    color: #444;
+    margin-right: 12px;
+    text-decoration: none;
+}
+
+.contact-form .form-group {
+    margin-bottom: 12px;
+}
+
+.form-label {
+    display: block;
+    font-size: 13px;
+    color: #444;
+    margin-bottom: 4px;
+}
+
+.form-input, .form-textarea, .form-select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #999; /* Borda mais escura */
+    border-radius: 0; /* Sem arredondamento */
+    font-size: 14px;
+    color: #222;
+}
+
+.form-textarea {
+    resize: vertical;
+}
+
+.form-error {
+    color: #cc0000; /* Vermelho mais forte */
+    font-size: 11px;
+    margin-top: 4px;
+    display: block;
+}
+
+.checkbox-group {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #444;
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-custom {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #555;
+    border-radius: 0; /* Quadrado */
+    margin-right: 8px;
+    display: inline-block;
+    position: relative;
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkbox-custom::after {
+    content: 'X'; /* Um X simples */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: #555;
+}
+
+.form-buttons {
+    display: flex;
+    flex-direction: column; /* Botões empilhados */
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 8px 15px;
+    border: 1px solid #333; /* Borda para os botões */
+    border-radius: 0; /* Sem arredondamento */
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #ddd; /* Cor de botão genérica */
+    color: #333;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Azul primário */
+    color: #fff;
+    border-color: #0056b3;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Cinza secundário */
+    color: #fff;
+    border-color: #545b62;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62;
+}
+
+.form-success {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    padding: 12px;
+    border: 1px solid #bee5eb;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.form-success .success-icon {
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+.form-success h4 {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.form-success p {
+    font-size: 13px;
+}
+
+.availability-content {
+    display: grid;
+    grid-template-columns: 1fr; /* Uma coluna por padrão */
+    gap: 15px;
+}
+
+.availability-item {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: flex-start; /* Alinha ao topo */
+    gap: 10px;
+}
+
+.availability-icon {
+    font-size: 25px;
+    color: #444;
+}
+
+.availability-info h4 {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+.availability-info p {
+    font-size: 13px;
+    color: #666;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #444; /* Cor escura */
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    margin-top: 20px;
+    border-top: 3px solid #666; /* Borda mais grossa */
+}
+
+.footer p {
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .nav-list li {
+        margin: 0;
+    }
+
+    .nav-link {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    .hobbies-grid,
+    .courses-grid,
+    .languages-grid,
+    .certifications .cert-list,
+    .projects-grid,
+    .skills-section .skills-categories,
+    .contact-section,
+    .availability-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+
